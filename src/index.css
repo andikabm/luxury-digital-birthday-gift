@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-cormorant: 'Cormorant Garamond', serif;
+    --font-script: 'Great Vibes', cursive;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #050814;
+    color: #f1f5f9;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-serif-luxury {
+  font-family: var(--font-cormorant);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Luxury Gold & Metallic Text Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fff2cb 0%, #e6ca65 25%, #d4af37 50%, #997819 75%, #fdf0a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-rose-gradient {
+  background: linear-gradient(135deg, #fce7f3 0%, #e8b4b8 35%, #b76e79 70%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gold-metallic {
+  background: linear-gradient(135deg, #f5e0a3 0%, #d4af37 45%, #aa8210 80%, #fdf3c7 100%);
+}
+
+.bg-rose-metallic {
+  background: linear-gradient(135deg, #fbe7e9 0%, #e8b4b8 40%, #b76e79 85%, #f472b6 100%);
+}
+
+/* Glassmorphism & Gold Borders */
+.glass-panel {
+  background: rgba(10, 15, 36, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-hover {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(15, 23, 50, 0.65);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 20px 50px -10px rgba(212, 175, 55, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0) 0%, rgba(212, 175, 55, 0.4) 50%, rgba(212, 175, 55, 0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3.5s infinite;
+}
+
+/* Glow effects */
+.gold-glow {
+  box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.35);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 60px 10px rgba(212, 175, 55, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050814;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}

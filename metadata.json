@@ -1,0 +1,6 @@
+{
+  "name": "Luxury Digital Birthday Gift",
+  "description": "Exclusive Luxury Romance digital birthday gift website featuring interactive aurora background, glassmorphism UI, typewriter letter, and photo memory gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
