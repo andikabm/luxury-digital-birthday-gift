@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { defaultConfig } from './data/defaultConfig';
 import { GiftConfig } from './types';
@@ -11,27 +11,11 @@ import { VideoSection } from './components/VideoSection';
 import { LetterSection } from './components/LetterSection';
 import { CountdownSection } from './components/CountdownSection';
 import { ClosingSection } from './components/ClosingSection';
-import { PersonalizationModal } from './components/PersonalizationModal';
 
 export default function App() {
-  const [config, setConfig] = useState<GiftConfig>(() => {
-    const saved = localStorage.getItem('luxury_birthday_config');
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch {
-        return defaultConfig;
-      }
-    }
-    return defaultConfig;
-  });
+  const [config] = useState<GiftConfig>(defaultConfig);
 
   const [isUnlocked, setIsUnlocked] = useState(false);
-
-  const handleSaveConfig = (newConfig: GiftConfig) => {
-    setConfig(newConfig);
-    localStorage.setItem('luxury_birthday_config', JSON.stringify(newConfig));
-  };
 
   const handleOpenGift = () => {
     setIsUnlocked(true);
@@ -50,10 +34,11 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-[#050814] text-slate-100 font-sans selection:bg-[#d4af37]/30 selection:text-[#f3e5ab] overflow-x-hidden">
+
       {/* Dynamic Starry Aurora Sky Background */}
       <BackgroundSkyCanvas />
 
-      {/* SECTION 1: LOADING SCREEN */}
+      {/* Loading Screen */}
       <AnimatePresence>
         {!isUnlocked && (
           <LoadingScreen
@@ -63,7 +48,7 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      {/* MAIN WEBSITE CONTENT (UNLOCKED) */}
+      {/* Main Content */}
       {isUnlocked && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -71,7 +56,6 @@ export default function App() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="relative z-10 space-y-12 sm:space-y-20 pb-20"
         >
-          {/* SECTION 2: HERO */}
           <HeroSection
             recipientName={config.recipientName}
             greetingTitle={config.greetingTitle}
@@ -79,13 +63,15 @@ export default function App() {
             onExploreClick={handleScrollToGallery}
           />
 
-          {/* SECTION 3: GALERI FOTO */}
-          <PhotoGallerySection photos={config.photos} />
+          <PhotoGallerySection
+            photos={config.photos}
+          />
 
-          {/* SECTION 4: VIDEO */}
-          <VideoSection videoUrl={config.videoUrl} posterUrl={config.videoPoster} />
+          <VideoSection
+            videoUrl={config.videoUrl}
+            posterUrl={config.videoPoster}
+          />
 
-          {/* SECTION 5: SURAT */}
           <LetterSection
             title={config.letterTitle}
             body={config.letterBody}
@@ -93,13 +79,11 @@ export default function App() {
             recipientName={config.recipientName}
           />
 
-          {/* SECTION 6: COUNTDOWN */}
           <CountdownSection
             targetDateIso={config.nextBirthdayDate}
             recipientName={config.recipientName}
           />
 
-          {/* SECTION 7: PENUTUP */}
           <ClosingSection
             closingQuote={config.closingQuote}
             recipientName={config.recipientName}
@@ -107,9 +91,8 @@ export default function App() {
             onReplay={handleReplay}
           />
 
-          {/* Footer Branding */}
           <footer className="text-center py-8 text-xs font-cinzel text-slate-500 tracking-[0.25em] border-t border-white/5 uppercase">
-            Designed with Elegance & Love &bull; {config.recipientName} Edition
+            Designed with Elegance &amp; Love • {config.recipientName} Edition
           </footer>
         </motion.div>
       )}
@@ -117,8 +100,6 @@ export default function App() {
       {/* Floating Audio Controller */}
       <AudioPlayerController isUnlocked={isUnlocked} />
 
-      {/* Floating Customization Modal */}
-      <PersonalizationModal config={config} onSave={handleSaveConfig} />
     </div>
   );
 }
