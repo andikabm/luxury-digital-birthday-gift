@@ -2,75 +2,94 @@ import { GiftConfig } from '../types';
 
 export const defaultConfig: GiftConfig = {
   recipientName: 'Clarissa Eleanor',
-  senderName: 'Untukmu yang Spesial',
-  greetingTitle: 'Happy Birthday',
-  greetingSubtitle: 'Semoga hari ini menjadi hari yang paling membahagiakan untukmu.',
-  nextBirthdayDate: '2027-05-18T00:00:00',
-  letterTitle: 'Untuk Seseorang yang Selalu Mewarnai Hariku',
-  letterBody: `Selamat ulang tahun, sayangku...
+  senderName: 'Someone Who Loves You',
 
-Di hari yang sangat istimewa ini, aku hanya ingin menyampaikan betapa bersyukurnya aku atas kehadiranmu di dalam hidupku. Setiap tawa yang kamu bagikan, setiap senyuman manis yang kamu ukir, dan setiap perhatian hangatmu adalah hadiah terindah yang pernah kuterima.
+  greetingTitle: 'Happy Girlfriend Day',
 
-Terima kasih telah menjadi rumah tempatku pulang, menjadi pelita saat malam terasa pekat, dan menjadi alasan di balik senyumku setiap hari. 
+  greetingSubtitle:
+    'Untuk perempuan yang selalu membuat hari-hariku lebih indah. Terima kasih sudah hadir dalam hidupku.',
 
-Semoga di usia yang baru ini, setiap langkahmu dipenuhi dengan keberkahan, kebahagiaan yang melimpah, dan impian-impian indahmu satu per satu menjadi kenyataan. 
+  nextBirthdayDate: '2026-08-01T00:00:00',
 
-Aku akan selalu di sini, menggenggam tanganmu dan mendukung setiap perjalananmu.
+  letterTitle: 'A Letter For You',
 
-Dengan seluruh kasih dan cintaku,
-Selamanya untukmu.`,
-  closingQuote: 'Terima kasih sudah hadir di hidupku.',
+  letterBody: `Happy Girlfriend Day, Sayang...
+
+Terima kasih sudah menjadi bagian terindah dalam hidupku.
+
+Mungkin hadiah ini sederhana, tetapi setiap foto, setiap lagu, dan setiap kata di dalam website ini dipersiapkan khusus untukmu.
+
+Aku bersyukur dipertemukan dengan seseorang yang selalu berhasil membuatku tersenyum, bahkan di hari-hari yang paling melelahkan.
+
+Terima kasih sudah selalu mendukungku, mendengarkanku, dan tetap bertahan bersamaku.
+
+Aku berharap kita masih bisa menciptakan lebih banyak kenangan indah, tertawa bersama, dan saling menemani dalam setiap langkah kehidupan.
+
+Semoga setiap kali kamu membuka website ini, kamu selalu ingat bahwa ada seseorang yang sangat bersyukur karena memilikimu.
+
+Happy Girlfriend Day.
+
+I love you,
+today,
+tomorrow,
+and forever.`,
+
+  closingQuote: 'Forever starts with you. ❤️',
+
   videoUrl: '/videos/ourstory.mp4',
+
   videoPoster: '/images/photo7.jpg',
+
   bgMusicPreset: 'romantic-piano',
+
   photos: [
     {
-id: 'p1',
-    url: '/images/photo1.jpg',
-    title: 'Momen Pertama',
-    caption: 'Semua kebahagiaanku dimulai sejak mengenalmu.',
-    date: 'Memory #1',
-    aspectRatio: 'portrait'
-  },
-  {
-    id: 'p2',
-    url: '/images/photo2.jpg',
-    title: 'Selalu Bersamamu',
-    caption: 'Bersamamu, setiap hari terasa lebih indah.',
-    date: 'Memory #2',
-    aspectRatio: 'portrait'
-  },
-  {
-    id: 'p3',
-    url: '/images/photo3.jpg',
-    title: 'Senyumanmu',
-    caption: 'Senyumanmu selalu berhasil membuat hariku lebih baik.',
-    date: 'Memory #3',
-    aspectRatio: 'portrait'
-  },
-  {
-    id: 'p4',
-    url: '/images/photo4.jpg',
-    title: 'Tatapanmu',
-    caption: 'Tatapanmu adalah tempat ternyaman untukku.',
-    date: 'Memory #4',
-    aspectRatio: 'portrait'
-  },
-  {
-    id: 'p5',
-    url: '/images/photo5.jpg',
-    title: 'Bahagia Bersama',
-    caption: 'Semoga kita terus bersama dalam setiap cerita.',
-    date: 'Memory #5',
-    aspectRatio: 'portrait'
-  },
-  {
-    id: 'p6',
-    url: '/images/photo6.jpg',
-    title: 'Forever',
-    caption: 'Terima kasih sudah hadir di hidupku ❤️',
-    date: 'Memory #6',
-    aspectRatio: 'portrait'
+      id: 'p1',
+      url: '/images/photo1.jpg',
+      title: 'The Beginning',
+      caption: 'Semua cerita indah kita dimulai dari sini.',
+      date: 'Our Story',
+      aspectRatio: 'portrait'
+    },
+    {
+      id: 'p2',
+      url: '/images/photo2.jpg',
+      title: 'Every Smile',
+      caption: 'Senyummu selalu menjadi alasan bahagiaku.',
+      date: 'Beautiful Memory',
+      aspectRatio: 'portrait'
+    },
+    {
+      id: 'p3',
+      url: '/images/photo3.jpg',
+      title: 'You & Me',
+      caption: 'Rumahku selalu ada di sampingmu.',
+      date: 'Together',
+      aspectRatio: 'portrait'
+    },
+    {
+      id: 'p4',
+      url: '/images/photo4.jpg',
+      title: 'Little Moments',
+      caption: 'Kebahagiaan selalu terasa sederhana saat bersamamu.',
+      date: 'Our Love',
+      aspectRatio: 'portrait'
+    },
+    {
+      id: 'p5',
+      url: '/images/photo5.jpg',
+      title: 'Always',
+      caption: 'Aku akan terus memilihmu, setiap hari.',
+      date: 'Forever',
+      aspectRatio: 'portrait'
+    },
+    {
+      id: 'p6',
+      url: '/images/photo6.jpg',
+      title: 'Happy Girlfriend Day',
+      caption: 'Terima kasih sudah menjadi perempuan terbaik di hidupku.',
+      date: '01 August 2026',
+      aspectRatio: 'portrait'
     }
   ]
 };

@@ -178,10 +178,10 @@ export const ClosingSection: React.FC<ClosingSectionProps> = ({
 
               <div className="space-y-2">
                 <h3 className="text-2xl font-serif-luxury font-bold text-gold-gradient">
-                  Cintaku Selalu Untukmu
+                  Happy Girlfriend Day ❤️
                 </h3>
                 <p className="text-sm font-serif-luxury italic text-slate-200 leading-relaxed">
-                  Semoga setiap detik di usiamu yang baru ini selalu diliputi tawa, kedamaian, dan kebahagiaan sejati.
+                  Terima kasih sudah menjadi bagian terindah dalam hidupku. Semoga kita selalu diberi kesempatan untuk menciptakan lebih banyak kenangan indah bersama. ❤️
                 </p>
               </div>
 
@@ -190,7 +190,7 @@ export const ClosingSection: React.FC<ClosingSectionProps> = ({
                   onClick={() => setShowLoveModal(false)}
                   className="w-full py-3 rounded-full bg-gold-metallic text-[#050814] font-cinzel text-xs font-bold tracking-widest uppercase hover:opacity-95"
                 >
-                  Terima Kasih, Sayang ❤️
+                  Happy Girlfriend Day ❤️
                 </button>
 
                 <button
@@ -201,7 +201,7 @@ export const ClosingSection: React.FC<ClosingSectionProps> = ({
                   className="w-full py-2.5 rounded-full glass-panel text-slate-300 hover:text-white font-cinzel text-xs tracking-widest uppercase flex items-center justify-center gap-2"
                 >
                   <RotateCcw className="w-3.5 h-3.5 text-[#d4af37]" />
-                  <span>Putar Ulang Pengalaman</span>
+                  <span>Lihat Lagi Kenangan Kita</span>
                 </button>
               </div>
             </motion.div>
