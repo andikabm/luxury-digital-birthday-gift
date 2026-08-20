@@ -178,7 +178,7 @@ export const ClosingSection: React.FC<ClosingSectionProps> = ({
 
               <div className="space-y-2">
                 <h3 className="text-2xl font-serif-luxury font-bold text-gold-gradient">
-                  Happy Girlfriend Day ❤️
+                  Happy Birthday ❤️
                 </h3>
                 <p className="text-sm font-serif-luxury italic text-slate-200 leading-relaxed">
                   Terima kasih sudah menjadi bagian terindah dalam hidupku. Semoga kita selalu diberi kesempatan untuk menciptakan lebih banyak kenangan indah bersama. ❤️
@@ -190,7 +190,7 @@ export const ClosingSection: React.FC<ClosingSectionProps> = ({
                   onClick={() => setShowLoveModal(false)}
                   className="w-full py-3 rounded-full bg-gold-metallic text-[#050814] font-cinzel text-xs font-bold tracking-widest uppercase hover:opacity-95"
                 >
-                  Happy Girlfriend Day ❤️
+                  Happy Birthday ❤️
                 </button>
 
                 <button

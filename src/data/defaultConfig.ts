@@ -4,30 +4,32 @@ export const defaultConfig: GiftConfig = {
   recipientName: 'Clarissa Eleanor',
   senderName: 'Someone Who Loves You',
 
-  greetingTitle: 'Happy Girlfriend Day',
+  greetingTitle: 'Happy Birthday',
 
   greetingSubtitle:
-    'Untuk perempuan yang selalu membuat hari-hariku lebih indah. Terima kasih sudah hadir dalam hidupku.',
+    'Untuk seseorang yang sangat spesial. Semoga hari ulang tahunmu dipenuhi kebahagiaan, cinta, dan segala hal indah yang kamu impikan.',
 
-  nextBirthdayDate: '2026-08-01T00:00:00',
+  nextBirthdayDate: '2027-08-01T00:00:00',
 
   letterTitle: 'A Letter For You',
 
-  letterBody: `Happy Girlfriend Day, Sayang...
+  letterBody: `Happy Birthday, Sayang...
 
-Terima kasih sudah menjadi bagian terindah dalam hidupku.
+Selamat ulang tahun untuk seseorang yang begitu berarti dalam hidupku.
+
+Terima kasih sudah hadir dan menjadi bagian dari hari-hariku.
 
 Mungkin hadiah ini sederhana, tetapi setiap foto, setiap lagu, dan setiap kata di dalam website ini dipersiapkan khusus untukmu.
 
-Aku bersyukur dipertemukan dengan seseorang yang selalu berhasil membuatku tersenyum, bahkan di hari-hari yang paling melelahkan.
+Aku bersyukur bisa mengenalmu, berbagi cerita denganmu, dan menciptakan begitu banyak kenangan indah bersamamu.
 
-Terima kasih sudah selalu mendukungku, mendengarkanku, dan tetap bertahan bersamaku.
+Di hari spesialmu ini, aku berharap kamu selalu diberikan kesehatan, kebahagiaan, dan segala hal baik yang kamu impikan.
 
-Aku berharap kita masih bisa menciptakan lebih banyak kenangan indah, tertawa bersama, dan saling menemani dalam setiap langkah kehidupan.
+Semoga di usia yang baru ini, semakin banyak hal indah yang datang ke dalam hidupmu.
 
-Semoga setiap kali kamu membuka website ini, kamu selalu ingat bahwa ada seseorang yang sangat bersyukur karena memilikimu.
+Dan semoga aku masih bisa menjadi seseorang yang menemanimu dalam banyak cerita dan perjalanan berikutnya.
 
-Happy Girlfriend Day.
+Selamat ulang tahun, Sayang.
 
 I love you,
 today,
@@ -86,9 +88,9 @@ and forever.`,
     {
       id: 'p6',
       url: '/images/photo6.jpg',
-      title: 'Happy Girlfriend Day',
-      caption: 'Terima kasih sudah menjadi perempuan terbaik di hidupku.',
-      date: '01 August 2026',
+      title: 'Happy Birthday',
+      caption: 'Semoga hari spesialmu dipenuhi kebahagiaan dan cinta.',
+      date: 'Your Special Day',
       aspectRatio: 'portrait'
     }
   ]
